@@ -442,6 +442,12 @@ h1 {
     transform: translateX(-50%);
 }
 
+#contactIconsLeft {
+    justify-content: flex-start; /* Align to left side of parent */
+    left: 0px;    
+    transform: none;
+}
+
 .icon-link {
     display: inline-block;
     transition: transform 0.3s ease;
