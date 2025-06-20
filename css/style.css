@@ -66,7 +66,7 @@ nav ul {
 nav a {
     color: var(--color-neutral-400);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 0.
     font-weight: 400;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
@@ -116,7 +116,7 @@ h1 {
 .profile-image {
     width: 100%;
     max-width: 400px;
-    margin-bottom: 2rem;
+    margin-bottom: 15px; /* Add space between the image and icons */
 }
 
 .profile-image img {
@@ -425,21 +425,39 @@ h1 {
     font-size: 0.95rem;
 }
 
-/* Updates to responsive design for new sections */
-@media (max-width: 1024px) {
-    .hero-section {
-        padding: 3rem 4rem;
-        gap: 2rem;
-    }
-    
-    .navbar {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    
-    .nav-links {
-        gap: 0.1rem;
-    }
+/* Profile Icons */
+.profile-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Equal spacing between icons */
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: none; /* Remove shadow */
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: translateY(-3px);
+}
+
+.icon-link img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+.icon-link:hover img {
+    transform: scale(1.2); /* Slight grow effect on hover */
 }
 
 @media (max-width: 768px) {
@@ -510,5 +528,27 @@ h1 {
 
     .skills-container {
         grid-template-columns: 1fr;
+    }
+
+    .profile-icons {
+        margin-top: -15px;
+        padding: 8px 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .icon-link {
+        font-size: 1rem;
+    }
+    
+    .icon-link img {
+        width: 20px;
+        height: 20px;
     }
 }

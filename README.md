@@ -16,3 +16,4 @@ This directory contains all media files for the portfolio:
 2. Add events which i have hosted
 3. My repository to the collection of random images
 4. Complete ip the setup to contact us page
+5. Add new logos for socials on the landing page
