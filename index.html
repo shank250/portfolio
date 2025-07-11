@@ -20,7 +20,7 @@
             <ul class="nav-links">
                 <li><a href="#experience">experience</a></li>
                 <li><a href="#volunteering">volunteer</a></li>
-                <li><a href="#education">edu</a></li>
+                <li><a href="#education">education</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#skills">skills</a></li>
                 <li><a href="#achievements">achievements</a></li>
@@ -117,29 +117,12 @@
                 </div>
             </div>
         </section>
-
+        
         <section id="projects" class="section">
             <h2 class="section-title">projects</h2>
-            <div class="section-content projects-grid">
-                <div class="project-card">
-                    <h3>Multiagent System for Converting NL to SQL</h3>
-                    <p class="project-tech">Python, Transformers, VectorDB, Azure</p>
-                    <p class="project-description">Architected a multi-agent system that transforms user natural-language questions into SQL by chunking database schemas into a VectorDB. Finetuned a BERT classifier achieving 90% recall and delivered a production-ready pipeline with sub-second performance.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank">View Project</a>
-                        <a href="#" target="_blank">Source Code</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <h3>RAG Based Job Finder</h3>
-                    <p class="project-tech">Azure AI Search, PostgreSQL, Spring Boot, Azure App Service</p>
-                    <p class="project-description">Developed a robust backend using Spring Boot integrated with Azure AI Search and PostgreSQL. Implemented advanced RAG system with query rewriting to minimize LLM call costs and reduce hallucinations.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank">View Project</a>
-                        <a href="#" target="_blank">Source Code</a>
-                    </div>
-                </div>
+            <div class="section-content">
+                <div id="github-repo-list" class="github-repo-list"></div>
+                <script src="js/github-repos.js"></script>
             </div>
         </section>
 
@@ -246,8 +229,6 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-            </div>
-        </section>
     </main>
 
     <footer>
